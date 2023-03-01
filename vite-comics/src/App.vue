@@ -1,6 +1,13 @@
 <script>
-export default {
+import NavHeader from './components/AppHeader.vue'
 
+export default {
+  components: {
+    NavHeader
+  },
+  data() {
+
+  }
 }
 </script>
 
