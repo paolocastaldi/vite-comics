@@ -1,18 +1,32 @@
 <script>
-import NavHeader from './components/AppHeader.vue'
+
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppIconsContent from "./components/AppIconsContent.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
-  components: {
-    NavHeader
-  },
   data() {
-
-  }
-}
+    return {
+      title: "ViteComics",
+    };
+  },
+  components: {
+    AppHeader,
+    AppMain,
+    AppIconsContent,
+    AppFooter,
+  },
+};
 </script>
 
 <template>
-  <div>test</div>
+  <AppHeader />
+  <AppMain products="products" />
+  <AppIconsContent />
+  <AppFooter />
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "./style.css";
+</style>
